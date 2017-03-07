@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:ProductC/ProductC.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ProductB/ProductB.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ProductA/ProductA.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Core/Core.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:MyLib/MyLib.xcodeproj">
+   </FileRef>
+</Workspace>

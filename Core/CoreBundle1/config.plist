@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Module1ViewController</key>
+	<dict>
+		<key>show_button2</key>
+		<true/>
+		<key>show_button1</key>
+		<true/>
+	</dict>
+	<key>Module2ViewController</key>
+	<dict>
+		<key>show_button</key>
+		<true/>
+	</dict>
+</dict>
+</plist>
