@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		963D91FD1E6FF20300C7F55C /* Module1PageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 963D91FC1E6FF20300C7F55C /* Module1PageView.xib */; };
+		963D92041E6FF34E00C7F55C /* Module1ViewController+Override.m in Sources */ = {isa = PBXBuildFile; fileRef = 963D92031E6FF34E00C7F55C /* Module1ViewController+Override.m */; };
 		F1AE55D61E6EA808009FCB82 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AE55D51E6EA808009FCB82 /* main.m */; };
 		F1AE55E71E6EA808009FCB82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1AE55E61E6EA808009FCB82 /* Assets.xcassets */; };
 		F1AE56041E6EA954009FCB82 /* libMyLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1AE56021E6EA954009FCB82 /* libMyLib.a */; };
@@ -18,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		963D91FC1E6FF20300C7F55C /* Module1PageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Module1PageView.xib; path = ProductC/Config/Module1PageView.xib; sourceTree = "<group>"; };
+		963D92021E6FF34E00C7F55C /* Module1ViewController+Override.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Module1ViewController+Override.h"; sourceTree = "<group>"; };
+		963D92031E6FF34E00C7F55C /* Module1ViewController+Override.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Module1ViewController+Override.m"; sourceTree = "<group>"; };
 		F1AE55D11E6EA808009FCB82 /* ProductC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProductC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1AE55D51E6EA808009FCB82 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F1AE55E61E6EA808009FCB82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -44,6 +49,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		963D92011E6FF34E00C7F55C /* core */ = {
+			isa = PBXGroup;
+			children = (
+				963D92021E6FF34E00C7F55C /* Module1ViewController+Override.h */,
+				963D92031E6FF34E00C7F55C /* Module1ViewController+Override.m */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
 		F1AE55C81E6EA808009FCB82 = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +83,7 @@
 		F1AE55D31E6EA808009FCB82 /* ProductC */ = {
 			isa = PBXGroup;
 			children = (
+				963D92011E6FF34E00C7F55C /* core */,
 				F1AE55E61E6EA808009FCB82 /* Assets.xcassets */,
 				F1AE55EB1E6EA808009FCB82 /* Info.plist */,
 				F1AE55D41E6EA808009FCB82 /* Supporting Files */,
@@ -104,6 +119,7 @@
 		F1AE560A1E6EAAF9009FCB82 /* Config */ = {
 			isa = PBXGroup;
 			children = (
+				963D91FC1E6FF20300C7F55C /* Module1PageView.xib */,
 				F1AE560D1E6EAC0F009FCB82 /* config.plist */,
 			);
 			name = Config;
@@ -168,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1AE560E1E6EAC0F009FCB82 /* config.plist in Resources */,
+				963D91FD1E6FF20300C7F55C /* Module1PageView.xib in Resources */,
 				F1AE55E71E6EA808009FCB82 /* Assets.xcassets in Resources */,
 				F1AE56591E6ECB4C009FCB82 /* CoreBundle1.bundle in Resources */,
 				F1AE56091E6EAA49009FCB82 /* img1.png in Resources */,
@@ -182,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1AE564E1E6EC43F009FCB82 /* AppDelegate.m in Sources */,
+				963D92041E6FF34E00C7F55C /* Module1ViewController+Override.m in Sources */,
 				F1AE55D61E6EA808009FCB82 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

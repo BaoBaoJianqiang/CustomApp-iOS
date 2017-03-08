@@ -30,7 +30,7 @@
 
 - (void)createViews {
     //1.从xib中获取View
-    NSString * rescourcePath = [[NSBundle mainBundle] pathForResource:@"CoreBundle1" ofType:@"bundle"];
+    NSString * rescourcePath = [self getModule1PageViewXibPath];
     NSBundle * bundle =[NSBundle bundleWithPath:rescourcePath];
     NSArray* list = [bundle loadNibNamed: @"Module1PageView" owner: self options: nil];
     self.view = list.lastObject;
@@ -43,6 +43,11 @@
         [module2Button removeFromSuperview];
         //[module2Button setHidden: YES];
     }
+}
+
+- (NSString *)getModule1PageViewXibPath
+{
+    return [[NSBundle mainBundle] pathForResource:@"CoreBundle1" ofType:@"bundle"];
 }
 
 - (void)createEvents {
