@@ -29,16 +29,16 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(ConfigManager);
     
     NSString *plistPath = [rescourceBundle pathForResource:@"config" ofType:@"plist"];
     NSMutableDictionary* defaultData = [[NSMutableDictionary alloc] initWithContentsOfFile:plistPath];
-
+    
     
     //product data
     NSString *plistPath2 = [[NSBundle mainBundle] pathForResource:@"config" ofType:@"plist"];
     NSMutableDictionary* productData = [[NSMutableDictionary alloc] initWithContentsOfFile:plistPath2];
     
-    
+    [defaultData addEntriesFromDictionary:productData];
     self.data = defaultData;
     
-    NSLog(self.data);
+    NSLog(@"self.data = %@", self.data);
 }
 
 
