@@ -1,5 +1,5 @@
 //
-//  APageViewController.h
+//  PageViewController.h
 //  MyApp
 //
 //  Created by jax on 13-9-2.
@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "AppBaseViewController.h"
 
-@interface Module2ViewController : AppBaseViewController
+@interface Module3ViewController : AppBaseViewController
 
 @end

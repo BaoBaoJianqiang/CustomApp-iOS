@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		C12BB4DA1C1087F1002BE68C /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C12BB4D91C1087F1002BE68C /* BaseViewController.m */; };
 		C12BB4FD1C1181D6002BE68C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C12BB4FC1C1181D6002BE68C /* UIKit.framework */; };
-		C12BB5951C1595C8002BE68C /* Navigator.m in Sources */ = {isa = PBXBuildFile; fileRef = C12BB5941C1595C8002BE68C /* Navigator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,8 +29,6 @@
 		C12BB4D91C1087F1002BE68C /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		C12BB4E31C10A2D1002BE68C /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthesizeSingleton.h; sourceTree = "<group>"; };
 		C12BB4FC1C1181D6002BE68C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		C12BB5931C1595C8002BE68C /* Navigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Navigator.h; sourceTree = "<group>"; };
-		C12BB5941C1595C8002BE68C /* Navigator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Navigator.m; sourceTree = "<group>"; };
 		F1AE56471E6EC059009FCB82 /* SingletonScript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingletonScript.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -51,7 +48,6 @@
 			isa = PBXGroup;
 			children = (
 				F1AE56471E6EC059009FCB82 /* SingletonScript.h */,
-				C12BB58C1C159377002BE68C /* Navigator */,
 				C12BB4FC1C1181D6002BE68C /* UIKit.framework */,
 				C12BB4E31C10A2D1002BE68C /* SynthesizeSingleton.h */,
 				C12BB4D71C1087F1002BE68C /* BaseClass */,
@@ -74,15 +70,6 @@
 				C12BB4D91C1087F1002BE68C /* BaseViewController.m */,
 			);
 			path = BaseClass;
-			sourceTree = "<group>";
-		};
-		C12BB58C1C159377002BE68C /* Navigator */ = {
-			isa = PBXGroup;
-			children = (
-				C12BB5931C1595C8002BE68C /* Navigator.h */,
-				C12BB5941C1595C8002BE68C /* Navigator.m */,
-			);
-			path = Navigator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,7 +129,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C12BB4DA1C1087F1002BE68C /* BaseViewController.m in Sources */,
-				C12BB5951C1595C8002BE68C /* Navigator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

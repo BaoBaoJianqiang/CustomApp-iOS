@@ -14,9 +14,11 @@
 		F1AE56041E6EA954009FCB82 /* libMyLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1AE56021E6EA954009FCB82 /* libMyLib.a */; };
 		F1AE56091E6EAA49009FCB82 /* img1.png in Resources */ = {isa = PBXBuildFile; fileRef = F1AE56081E6EAA49009FCB82 /* img1.png */; };
 		F1AE560E1E6EAC0F009FCB82 /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = F1AE560D1E6EAC0F009FCB82 /* config.plist */; };
-		F1AE56211E6EB8BE009FCB82 /* libCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1AE56011E6EA954009FCB82 /* libCore.a */; };
 		F1AE564E1E6EC43F009FCB82 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AE564D1E6EC43F009FCB82 /* AppDelegate.m */; };
 		F1AE56591E6ECB4C009FCB82 /* CoreBundle1.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F1AE56581E6ECB4C009FCB82 /* CoreBundle1.bundle */; };
+		F1D6BE7520AF4C69008D6463 /* Module2ViewController+Override.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D6BE7320AF4C69008D6463 /* Module2ViewController+Override.m */; };
+		F1D6BE7B20AF4D34008D6463 /* Module2_2PageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1D6BE7A20AF4D34008D6463 /* Module2_2PageView.xib */; };
+		F1D6BEB220AF9838008D6463 /* libCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1D6BEB320AF9838008D6463 /* libCore.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,10 @@
 		F1AE564C1E6EC43F009FCB82 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F1AE564D1E6EC43F009FCB82 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F1AE56581E6ECB4C009FCB82 /* CoreBundle1.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CoreBundle1.bundle; sourceTree = "<group>"; };
+		F1D6BE7320AF4C69008D6463 /* Module2ViewController+Override.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Module2ViewController+Override.m"; sourceTree = "<group>"; };
+		F1D6BE7420AF4C69008D6463 /* Module2ViewController+Override.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Module2ViewController+Override.h"; sourceTree = "<group>"; };
+		F1D6BE7A20AF4D34008D6463 /* Module2_2PageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Module2_2PageView.xib; path = ProductC/Config/Module2_2PageView.xib; sourceTree = "<group>"; };
+		F1D6BEB320AF9838008D6463 /* libCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1AE56211E6EB8BE009FCB82 /* libCore.a in Frameworks */,
+				F1D6BEB220AF9838008D6463 /* libCore.a in Frameworks */,
 				F1AE56041E6EA954009FCB82 /* libMyLib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,6 +60,8 @@
 			children = (
 				963D92021E6FF34E00C7F55C /* Module1ViewController+Override.h */,
 				963D92031E6FF34E00C7F55C /* Module1ViewController+Override.m */,
+				F1D6BE7420AF4C69008D6463 /* Module2ViewController+Override.h */,
+				F1D6BE7320AF4C69008D6463 /* Module2ViewController+Override.m */,
 			);
 			path = core;
 			sourceTree = "<group>";
@@ -102,6 +110,7 @@
 		F1AE56001E6EA953009FCB82 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F1D6BEB320AF9838008D6463 /* libCore.a */,
 				F1AE56011E6EA954009FCB82 /* libCore.a */,
 				F1AE56021E6EA954009FCB82 /* libMyLib.a */,
 			);
@@ -119,6 +128,7 @@
 		F1AE560A1E6EAAF9009FCB82 /* Config */ = {
 			isa = PBXGroup;
 			children = (
+				F1D6BE7A20AF4D34008D6463 /* Module2_2PageView.xib */,
 				963D91FC1E6FF20300C7F55C /* Module1PageView.xib */,
 				F1AE560D1E6EAC0F009FCB82 /* config.plist */,
 			);
@@ -188,6 +198,7 @@
 				F1AE55E71E6EA808009FCB82 /* Assets.xcassets in Resources */,
 				F1AE56591E6ECB4C009FCB82 /* CoreBundle1.bundle in Resources */,
 				F1AE56091E6EAA49009FCB82 /* img1.png in Resources */,
+				F1D6BE7B20AF4D34008D6463 /* Module2_2PageView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +211,7 @@
 			files = (
 				F1AE564E1E6EC43F009FCB82 /* AppDelegate.m in Sources */,
 				963D92041E6FF34E00C7F55C /* Module1ViewController+Override.m in Sources */,
+				F1D6BE7520AF4C69008D6463 /* Module2ViewController+Override.m in Sources */,
 				F1AE55D61E6EA808009FCB82 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

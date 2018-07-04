@@ -9,10 +9,13 @@
 /* Begin PBXBuildFile section */
 		F1AE55AD1E6EA7F7009FCB82 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AE55AC1E6EA7F7009FCB82 /* main.m */; };
 		F1AE55BE1E6EA7F7009FCB82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1AE55BD1E6EA7F7009FCB82 /* Assets.xcassets */; };
-		F1AE55FE1E6EA94A009FCB82 /* libCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1AE55FC1E6EA94A009FCB82 /* libCore.a */; };
-		F1AE55FF1E6EA94A009FCB82 /* libMyLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1AE55FD1E6EA94A009FCB82 /* libMyLib.a */; };
 		F1AE56511E6EC445009FCB82 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AE56501E6EC445009FCB82 /* AppDelegate.m */; };
 		F1AE565B1E6ECB5A009FCB82 /* CoreBundle1.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F1AE565A1E6ECB5A009FCB82 /* CoreBundle1.bundle */; };
+		F1D6BE8E20AF92A4008D6463 /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = F1D6BE8D20AF92A4008D6463 /* config.plist */; };
+		F1D6BEAE20AF9807008D6463 /* libCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1D6BEAF20AF9807008D6463 /* libCore.a */; };
+		F1D6BEB020AF9815008D6463 /* libMyLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1D6BEB120AF9815008D6463 /* libMyLib.a */; };
+		F1D6BEB820AF9A4E008D6463 /* Module3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D6BEB620AF9A4D008D6463 /* Module3ViewController.m */; };
+		F1D6BEBA20AF9AB9008D6463 /* Module3PageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1D6BEB920AF9AB9008D6463 /* Module3PageView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +28,13 @@
 		F1AE564F1E6EC445009FCB82 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F1AE56501E6EC445009FCB82 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F1AE565A1E6ECB5A009FCB82 /* CoreBundle1.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CoreBundle1.bundle; sourceTree = "<group>"; };
+		F1D6BE8D20AF92A4008D6463 /* config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = config.plist; path = ProductB/Config/config.plist; sourceTree = "<group>"; };
+		F1D6BEAD20AF97A3008D6463 /* libCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1D6BEAF20AF9807008D6463 /* libCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1D6BEB120AF9815008D6463 /* libMyLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMyLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1D6BEB620AF9A4D008D6463 /* Module3ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Module3ViewController.m; sourceTree = "<group>"; };
+		F1D6BEB720AF9A4D008D6463 /* Module3ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Module3ViewController.h; sourceTree = "<group>"; };
+		F1D6BEB920AF9AB9008D6463 /* Module3PageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Module3PageView.xib; path = ProductB/Module3PageView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,8 +42,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1AE55FE1E6EA94A009FCB82 /* libCore.a in Frameworks */,
-				F1AE55FF1E6EA94A009FCB82 /* libMyLib.a in Frameworks */,
+				F1D6BEB020AF9815008D6463 /* libMyLib.a in Frameworks */,
+				F1D6BEAE20AF9807008D6463 /* libCore.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +74,8 @@
 		F1AE55AA1E6EA7F7009FCB82 /* ProductB */ = {
 			isa = PBXGroup;
 			children = (
+				F1D6BEB720AF9A4D008D6463 /* Module3ViewController.h */,
+				F1D6BEB620AF9A4D008D6463 /* Module3ViewController.m */,
 				F1AE55BD1E6EA7F7009FCB82 /* Assets.xcassets */,
 				F1AE55C21E6EA7F7009FCB82 /* Info.plist */,
 				F1AE55AB1E6EA7F7009FCB82 /* Supporting Files */,
@@ -82,6 +94,9 @@
 		F1AE55FB1E6EA94A009FCB82 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F1D6BEB120AF9815008D6463 /* libMyLib.a */,
+				F1D6BEAF20AF9807008D6463 /* libCore.a */,
+				F1D6BEAD20AF97A3008D6463 /* libCore.a */,
 				F1AE55FC1E6EA94A009FCB82 /* libCore.a */,
 				F1AE55FD1E6EA94A009FCB82 /* libMyLib.a */,
 			);
@@ -91,6 +106,8 @@
 		F1AE560B1E6EAB05009FCB82 /* Config */ = {
 			isa = PBXGroup;
 			children = (
+				F1D6BEB920AF9AB9008D6463 /* Module3PageView.xib */,
+				F1D6BE8D20AF92A4008D6463 /* config.plist */,
 			);
 			name = Config;
 			sourceTree = "<group>";
@@ -154,7 +171,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1AE565B1E6ECB5A009FCB82 /* CoreBundle1.bundle in Resources */,
+				F1D6BEBA20AF9AB9008D6463 /* Module3PageView.xib in Resources */,
 				F1AE55BE1E6EA7F7009FCB82 /* Assets.xcassets in Resources */,
+				F1D6BE8E20AF92A4008D6463 /* config.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1AE56511E6EC445009FCB82 /* AppDelegate.m in Sources */,
+				F1D6BEB820AF9A4E008D6463 /* Module3ViewController.m in Sources */,
 				F1AE55AD1E6EA7F7009FCB82 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

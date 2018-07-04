@@ -7,6 +7,7 @@
 
 #import "Navigator.h"
 #import "BaseViewController.h"
+#import "ConfigManager.h"
 
 @implementation Navigator
 
@@ -23,6 +24,15 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(Navigator);
 }
 
 - (void)navigateTo:(NSString *)viewController withData:(NSMutableDictionary*)param {
+    
+    NSDictionary* data = [ConfigManager getInstance].data;
+    
+    id config = [data valueForKey: viewController];    
+    NSString* trueViewController = (NSString*)config[@"map"];
+    if(trueViewController) {
+        viewController = trueViewController;
+    }
+    
     BaseViewController * classObject = (BaseViewController *)[[NSClassFromString(viewController) alloc] init];
     classObject.param = param;
     

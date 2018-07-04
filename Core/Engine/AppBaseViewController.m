@@ -20,4 +20,5 @@
     return [(NSNumber*)config[key] boolValue];
 }
 
+
 @end

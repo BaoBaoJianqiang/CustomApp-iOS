@@ -14,9 +14,10 @@
 		F1AE56161E6EB287009FCB82 /* Module2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AE56101E6EAE93009FCB82 /* Module2ViewController.m */; };
 		F1AE562B1E6EBBD8009FCB82 /* Module1PageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1AE562A1E6EBBD8009FCB82 /* Module1PageView.xib */; };
 		F1AE56311E6EBC83009FCB82 /* Module2PageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1AE56301E6EBC83009FCB82 /* Module2PageView.xib */; };
-		F1AE56461E6EBE4B009FCB82 /* ConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AE56451E6EBE4B009FCB82 /* ConfigManager.m */; };
 		F1AE56491E6EC261009FCB82 /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = F1AE56481E6EC261009FCB82 /* config.plist */; };
-		F1AE56571E6ECA08009FCB82 /* AppBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AE56561E6ECA08009FCB82 /* AppBaseViewController.m */; };
+		F1D6BEA720AF970F008D6463 /* ConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D6BEA420AF970E008D6463 /* ConfigManager.m */; };
+		F1D6BEA820AF970F008D6463 /* AppBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D6BEA620AF970E008D6463 /* AppBaseViewController.m */; };
+		F1D6BEAB20AF9715008D6463 /* Navigator.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D6BEAA20AF9715008D6463 /* Navigator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -46,11 +47,13 @@
 		F1AE56121E6EAF3C009FCB82 /* img2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img2.png; sourceTree = "<group>"; };
 		F1AE562A1E6EBBD8009FCB82 /* Module1PageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Module1PageView.xib; sourceTree = "<group>"; };
 		F1AE56301E6EBC83009FCB82 /* Module2PageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Module2PageView.xib; sourceTree = "<group>"; };
-		F1AE56441E6EBE4B009FCB82 /* ConfigManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConfigManager.h; path = Engine/ConfigManager.h; sourceTree = "<group>"; };
-		F1AE56451E6EBE4B009FCB82 /* ConfigManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ConfigManager.m; path = Engine/ConfigManager.m; sourceTree = "<group>"; };
 		F1AE56481E6EC261009FCB82 /* config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
-		F1AE56551E6ECA08009FCB82 /* AppBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppBaseViewController.h; path = Engine/AppBaseViewController.h; sourceTree = "<group>"; };
-		F1AE56561E6ECA08009FCB82 /* AppBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppBaseViewController.m; path = Engine/AppBaseViewController.m; sourceTree = "<group>"; };
+		F1D6BEA320AF970E008D6463 /* AppBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppBaseViewController.h; path = Engine/AppBaseViewController.h; sourceTree = "<group>"; };
+		F1D6BEA420AF970E008D6463 /* ConfigManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ConfigManager.m; path = Engine/ConfigManager.m; sourceTree = "<group>"; };
+		F1D6BEA520AF970E008D6463 /* ConfigManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConfigManager.h; path = Engine/ConfigManager.h; sourceTree = "<group>"; };
+		F1D6BEA620AF970E008D6463 /* AppBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppBaseViewController.m; path = Engine/AppBaseViewController.m; sourceTree = "<group>"; };
+		F1D6BEA920AF9715008D6463 /* Navigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Navigator.h; path = Navigator/Navigator.h; sourceTree = "<group>"; };
+		F1D6BEAA20AF9715008D6463 /* Navigator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Navigator.m; path = Navigator/Navigator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +77,6 @@
 		F1AE54FD1E6E9286009FCB82 = {
 			isa = PBXGroup;
 			children = (
-				F1AE56401E6EBE2E009FCB82 /* Engine */,
 				F1AE55231E6E94BF009FCB82 /* Core */,
 				F1AE55851E6E9D2B009FCB82 /* CoreBundle1 */,
 				F1AE55071E6E9286009FCB82 /* Products */,
@@ -94,6 +96,12 @@
 		F1AE55231E6E94BF009FCB82 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				F1D6BEA920AF9715008D6463 /* Navigator.h */,
+				F1D6BEAA20AF9715008D6463 /* Navigator.m */,
+				F1D6BEA320AF970E008D6463 /* AppBaseViewController.h */,
+				F1D6BEA620AF970E008D6463 /* AppBaseViewController.m */,
+				F1D6BEA520AF970E008D6463 /* ConfigManager.h */,
+				F1D6BEA420AF970E008D6463 /* ConfigManager.m */,
 				F1AE55911E6EA086009FCB82 /* MainViewController.h */,
 				F1AE55921E6EA086009FCB82 /* MainViewController.m */,
 				F1AE55941E6EA0A8009FCB82 /* Module1ViewController.h */,
@@ -123,17 +131,6 @@
 				F1AE562A1E6EBBD8009FCB82 /* Module1PageView.xib */,
 			);
 			path = CoreBundle1;
-			sourceTree = "<group>";
-		};
-		F1AE56401E6EBE2E009FCB82 /* Engine */ = {
-			isa = PBXGroup;
-			children = (
-				F1AE56551E6ECA08009FCB82 /* AppBaseViewController.h */,
-				F1AE56561E6ECA08009FCB82 /* AppBaseViewController.m */,
-				F1AE56441E6EBE4B009FCB82 /* ConfigManager.h */,
-				F1AE56451E6EBE4B009FCB82 /* ConfigManager.m */,
-			);
-			name = Engine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,11 +227,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1AE56461E6EBE4B009FCB82 /* ConfigManager.m in Sources */,
-				F1AE56571E6ECA08009FCB82 /* AppBaseViewController.m in Sources */,
 				F1AE56161E6EB287009FCB82 /* Module2ViewController.m in Sources */,
+				F1D6BEA820AF970F008D6463 /* AppBaseViewController.m in Sources */,
 				F1AE55971E6EA140009FCB82 /* MainViewController.m in Sources */,
+				F1D6BEAB20AF9715008D6463 /* Navigator.m in Sources */,
 				F1AE55981E6EA140009FCB82 /* Module1ViewController.m in Sources */,
+				F1D6BEA720AF970F008D6463 /* ConfigManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
